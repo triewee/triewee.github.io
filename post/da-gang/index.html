@@ -1,0 +1,317 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>大纲 | Gridea</title>
+<link rel="shortcut icon" href="https://triewee.github.io/favicon.ico?v=1754549535294">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://triewee.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="大纲 | Gridea - Atom Feed" href="https://triewee.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="这是个大缸。里面有很多（并非）好玩的东西。
+
+O.基本语法
+I. 数据结构
+
+I1. 线性数据结构
+I2. 树形数据结构
+IA. 单调栈 / 单调队列
+IB. 堆、优先队
+IC. 并查集 *
+ID. 线段树 **
+IE. 平衡二叉树 *!
+..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://triewee.github.io">
+  <img class="avatar" src="https://triewee.github.io/images/avatar.png?v=1754549535294" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    这里是人机船。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+      
+        <a href="/post/da-gang" class="menu">
+          大纲
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              大纲
+            </h2>
+            <div class="post-info">
+              <span>
+                2025-02-21
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>这是个大缸。里面有很多（并非）好玩的东西。</p>
+<p><ul class="markdownIt-TOC">
+<li><a href="#o%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95">O.基本语法</a></li>
+<li><a href="#i-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">I. 数据结构</a>
+<ul>
+<li><a href="#i1-%E7%BA%BF%E6%80%A7%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">I1. 线性数据结构</a></li>
+<li><a href="#i2-%E6%A0%91%E5%BD%A2%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">I2. 树形数据结构</a></li>
+<li><a href="#ia-%E5%8D%95%E8%B0%83%E6%A0%88-%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97">IA. 单调栈 / 单调队列</a></li>
+<li><a href="#ib-%E5%A0%86-%E4%BC%98%E5%85%88%E9%98%9F">IB. 堆、优先队</a></li>
+<li><a href="#ic-%E5%B9%B6%E6%9F%A5%E9%9B%86">IC. 并查集 *</a></li>
+<li><a href="#id-%E7%BA%BF%E6%AE%B5%E6%A0%91">ID. 线段树 **</a></li>
+<li><a href="#ie-%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91">IE. 平衡二叉树 *!</a></li>
+<li><a href="#if-%E5%88%86%E5%9D%97-%E5%88%86%E5%9D%97%E5%8F%98%E5%BC%8F%E4%B8%8E%E8%8E%AB%E9%98%9F">IF. 分块、分块变式与莫队 *!</a></li>
+<li><a href="#ig-lct">IG. LCT *!!!</a></li>
+</ul>
+</li>
+<li><a href="#ii-dp">II. DP</a>
+<ul>
+<li><a href="#ii0-dp%E6%A6%82%E5%BF%B5-%E6%99%AE%E9%80%9Adp">II0. DP概念、普通DP</a></li>
+<li><a href="#iia-%E5%8C%BA%E9%97%B4dp">IIA. 区间DP</a></li>
+<li><a href="#iib-%E6%95%B0%E4%BD%8Ddp">IIB. 数位DP</a></li>
+<li><a href="#iic-%E6%A0%91%E4%B8%8Adp">IIC. 树上DP</a></li>
+<li><a href="#iid-%E6%A6%82%E7%8E%87dp-%E6%9C%9F%E6%9C%9Bdp">IID. 概率DP、期望DP **</a></li>
+<li><a href="#iik-%E8%AE%A1%E6%95%B0%E9%97%AE%E9%A2%98">IIK. 计数问题 *!</a></li>
+<li><a href="#iie-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%BC%98%E5%8C%96">IIE. 数据结构优化 *!</a></li>
+<li><a href="#iif-iig-iih-%E5%86%B3%E7%AD%96%E5%8D%95%E8%B0%83%E6%80%A7-slope-trick-%E6%96%9C%E7%8E%87%E4%BC%98%E5%8C%96-%E5%9B%9B%E8%BE%B9%E5%BD%A2%E4%B8%8D%E7%AD%89%E5%BC%8F">IIF | IIG | IIH. 决策单调性、slope trick / 斜率优化、四边形不等式 *!</a></li>
+<li><a href="#iil-%E5%8A%A8%E6%80%81dp">IIL. 动态DP *!!</a></li>
+<li><a href="#iim-%E6%8F%92%E5%A4%B4dp">IIM. 插头DP *!!!</a></li>
+</ul>
+</li>
+<li><a href="#iii-%E5%9B%BE%E8%AE%BA">III. 图论</a>
+<ul>
+<li><a href="#iii1-dfs-bfs%E4%B8%8E%E5%85%B6%E4%BB%96%E6%90%9C%E7%B4%A2">III1. DFS、BFS与其他搜索</a></li>
+<li><a href="#iii2-%E6%9C%80%E7%9F%AD%E8%B7%AF">III2. 最短路</a></li>
+<li><a href="#iiia-%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E5%92%8C%E5%90%84%E7%A7%8Dtarjan">IIIA. 连通分量和各种Tarjan **</a></li>
+<li><a href="#iiic-%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86">IIIC. 树链剖分 **</a></li>
+<li><a href="#iiib-%E6%A0%91%E4%B8%8A%E5%90%AF%E5%8F%91%E5%BC%8F%E5%90%88%E5%B9%B6">IIIB. 树上启发式合并 *</a></li>
+<li><a href="#iiid-%E7%82%B9%E5%88%86%E6%B2%BB-%E9%87%8D%E5%BF%83%E5%89%96%E5%88%86">IIID. 点分治 / 重心剖分 *</a></li>
+</ul>
+</li>
+<li><a href="#iv-%E6%95%B0%E5%AD%A6">IV. 数学</a>
+<ul>
+<li><a href="#iva-%E6%95%B0%E8%AE%BA">IVA. 数论</a></li>
+<li><a href="#ivb-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0">IVB. 线性代数</a></li>
+<li><a href="#ivc-%E6%A6%82%E7%8E%87%E8%AE%BA">IVC. 概率论</a></li>
+<li><a href="#ive-%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6">IVE. 离散数学</a></li>
+<li><a href="#ivd-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6">IVD. 高等数学</a></li>
+</ul>
+</li>
+<li><a href="#v-%E5%AD%97%E7%AC%A6%E4%B8%B2">V. 字符串</a></li>
+<li><a href="#vi-ad-hoc">VI. Ad-hoc</a></li>
+<li><a href="#misc-%E6%9D%82%E9%A1%B9">MISC. 杂项</a></li>
+</ul>
+</p>
+<h1 id="o基本语法">O.基本语法</h1>
+<h1 id="i-数据结构">I. 数据结构</h1>
+<h2 id="i1-线性数据结构">I1. 线性数据结构</h2>
+<h2 id="i2-树形数据结构">I2. 树形数据结构</h2>
+<h2 id="ia-单调栈-单调队列">IA. 单调栈 / 单调队列</h2>
+<h2 id="ib-堆-优先队">IB. 堆、优先队</h2>
+<h2 id="ic-并查集">IC. 并查集 *</h2>
+<h2 id="id-线段树">ID. 线段树 **</h2>
+<h2 id="ie-平衡二叉树">IE. 平衡二叉树 *!</h2>
+<h2 id="if-分块-分块变式与莫队">IF. 分块、分块变式与莫队 *!</h2>
+<h2 id="ig-lct">IG. LCT *!!!</h2>
+<h1 id="ii-dp">II. DP</h1>
+<h2 id="ii0-dp概念-普通dp">II0. DP概念、普通DP</h2>
+<h2 id="iia-区间dp">IIA. 区间DP</h2>
+<h2 id="iib-数位dp">IIB. 数位DP</h2>
+<h2 id="iic-树上dp">IIC. 树上DP</h2>
+<h2 id="iid-概率dp-期望dp">IID. 概率DP、期望DP **</h2>
+<h2 id="iik-计数问题">IIK. 计数问题 *!</h2>
+<h2 id="iie-数据结构优化">IIE. 数据结构优化 *!</h2>
+<h2 id="iif-iig-iih-决策单调性-slope-trick-斜率优化-四边形不等式">IIF | IIG | IIH. 决策单调性、slope trick / 斜率优化、四边形不等式 *!</h2>
+<h2 id="iil-动态dp">IIL. 动态DP *!!</h2>
+<h2 id="iim-插头dp">IIM. 插头DP *!!!</h2>
+<h1 id="iii-图论">III. 图论</h1>
+<h2 id="iii1-dfs-bfs与其他搜索">III1. DFS、BFS与其他搜索</h2>
+<h2 id="iii2-最短路">III2. 最短路</h2>
+<h2 id="iiia-连通分量和各种tarjan">IIIA. 连通分量和各种Tarjan **</h2>
+<h2 id="iiic-树链剖分">IIIC. 树链剖分 **</h2>
+<h2 id="iiib-树上启发式合并">IIIB. 树上启发式合并 *</h2>
+<h2 id="iiid-点分治-重心剖分">IIID. 点分治 / 重心剖分 *</h2>
+<h1 id="iv-数学">IV. 数学</h1>
+<h2 id="iva-数论">IVA. 数论</h2>
+<h2 id="ivb-线性代数">IVB. 线性代数</h2>
+<h2 id="ivc-概率论">IVC. 概率论</h2>
+<h2 id="ive-离散数学">IVE. 离散数学</h2>
+<h2 id="ivd-高等数学">IVD. 高等数学</h2>
+<h1 id="v-字符串">V. 字符串</h1>
+<h1 id="vi-ad-hoc">VI. Ad-hoc</h1>
+<h1 id="misc-杂项">MISC. 杂项</h1>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#o%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95">O.基本语法</a></li>
+<li><a href="#i-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">I. 数据结构</a>
+<ul>
+<li><a href="#i1-%E7%BA%BF%E6%80%A7%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">I1. 线性数据结构</a></li>
+<li><a href="#i2-%E6%A0%91%E5%BD%A2%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">I2. 树形数据结构</a></li>
+<li><a href="#ia-%E5%8D%95%E8%B0%83%E6%A0%88-%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97">IA. 单调栈 / 单调队列</a></li>
+<li><a href="#ib-%E5%A0%86-%E4%BC%98%E5%85%88%E9%98%9F">IB. 堆、优先队</a></li>
+<li><a href="#ic-%E5%B9%B6%E6%9F%A5%E9%9B%86">IC. 并查集 *</a></li>
+<li><a href="#id-%E7%BA%BF%E6%AE%B5%E6%A0%91">ID. 线段树 **</a></li>
+<li><a href="#ie-%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91">IE. 平衡二叉树 *!</a></li>
+<li><a href="#if-%E5%88%86%E5%9D%97-%E5%88%86%E5%9D%97%E5%8F%98%E5%BC%8F%E4%B8%8E%E8%8E%AB%E9%98%9F">IF. 分块、分块变式与莫队 *!</a></li>
+<li><a href="#ig-lct">IG. LCT *!!!</a></li>
+</ul>
+</li>
+<li><a href="#ii-dp">II. DP</a>
+<ul>
+<li><a href="#ii0-dp%E6%A6%82%E5%BF%B5-%E6%99%AE%E9%80%9Adp">II0. DP概念、普通DP</a></li>
+<li><a href="#iia-%E5%8C%BA%E9%97%B4dp">IIA. 区间DP</a></li>
+<li><a href="#iib-%E6%95%B0%E4%BD%8Ddp">IIB. 数位DP</a></li>
+<li><a href="#iic-%E6%A0%91%E4%B8%8Adp">IIC. 树上DP</a></li>
+<li><a href="#iid-%E6%A6%82%E7%8E%87dp-%E6%9C%9F%E6%9C%9Bdp">IID. 概率DP、期望DP **</a></li>
+<li><a href="#iik-%E8%AE%A1%E6%95%B0%E9%97%AE%E9%A2%98">IIK. 计数问题 *!</a></li>
+<li><a href="#iie-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%BC%98%E5%8C%96">IIE. 数据结构优化 *!</a></li>
+<li><a href="#iif-iig-iih-%E5%86%B3%E7%AD%96%E5%8D%95%E8%B0%83%E6%80%A7-slope-trick-%E6%96%9C%E7%8E%87%E4%BC%98%E5%8C%96-%E5%9B%9B%E8%BE%B9%E5%BD%A2%E4%B8%8D%E7%AD%89%E5%BC%8F">IIF | IIG | IIH. 决策单调性、slope trick / 斜率优化、四边形不等式 *!</a></li>
+<li><a href="#iil-%E5%8A%A8%E6%80%81dp">IIL. 动态DP *!!</a></li>
+<li><a href="#iim-%E6%8F%92%E5%A4%B4dp">IIM. 插头DP *!!!</a></li>
+</ul>
+</li>
+<li><a href="#iii-%E5%9B%BE%E8%AE%BA">III. 图论</a>
+<ul>
+<li><a href="#iii1-dfs-bfs%E4%B8%8E%E5%85%B6%E4%BB%96%E6%90%9C%E7%B4%A2">III1. DFS、BFS与其他搜索</a></li>
+<li><a href="#iii2-%E6%9C%80%E7%9F%AD%E8%B7%AF">III2. 最短路</a></li>
+<li><a href="#iiia-%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E5%92%8C%E5%90%84%E7%A7%8Dtarjan">IIIA. 连通分量和各种Tarjan **</a></li>
+<li><a href="#iiic-%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86">IIIC. 树链剖分 **</a></li>
+<li><a href="#iiib-%E6%A0%91%E4%B8%8A%E5%90%AF%E5%8F%91%E5%BC%8F%E5%90%88%E5%B9%B6">IIIB. 树上启发式合并 *</a></li>
+<li><a href="#iiid-%E7%82%B9%E5%88%86%E6%B2%BB-%E9%87%8D%E5%BF%83%E5%89%96%E5%88%86">IIID. 点分治 / 重心剖分 *</a></li>
+</ul>
+</li>
+<li><a href="#iv-%E6%95%B0%E5%AD%A6">IV. 数学</a>
+<ul>
+<li><a href="#iva-%E6%95%B0%E8%AE%BA">IVA. 数论</a></li>
+<li><a href="#ivb-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0">IVB. 线性代数</a></li>
+<li><a href="#ivc-%E6%A6%82%E7%8E%87%E8%AE%BA">IVC. 概率论</a></li>
+<li><a href="#ive-%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6">IVE. 离散数学</a></li>
+<li><a href="#ivd-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6">IVD. 高等数学</a></li>
+</ul>
+</li>
+<li><a href="#v-%E5%AD%97%E7%AC%A6%E4%B8%B2">V. 字符串</a></li>
+<li><a href="#vi-ad-hoc">VI. Ad-hoc</a></li>
+<li><a href="#misc-%E6%9D%82%E9%A1%B9">MISC. 杂项</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://triewee.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
